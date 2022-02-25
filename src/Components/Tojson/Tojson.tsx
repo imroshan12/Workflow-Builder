@@ -1,21 +1,8 @@
 import { Elements, FlowElement } from 'react-flow-renderer';
+import { IJsonData } from '../../interfaces/tojson.interface';
 
 interface Props {
   elements: Elements;
-}
-
-interface IJsonData {
-  modules: {
-    id: string;
-    type: string;
-    nextStep: string;
-  }[];
-  conditions: {
-    id: string;
-    rules: [];
-    if: string;
-    else: string;
-  }[];
 }
 
 const Tojson = ({ elements }: Props) => {

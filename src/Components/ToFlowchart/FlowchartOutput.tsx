@@ -259,6 +259,8 @@ const FlowchartOutput = ({ flowchartInJson }: Props) => {
         connectionLineType={ConnectionLineType.SmoothStep}
         zoomOnScroll={false}
         paneMoveable={false}
+        nodesDraggable={false}
+        zoomOnDoubleClick={false}
       ></ReactFlow>
     </div>
   );

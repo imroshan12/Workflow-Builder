@@ -3,7 +3,6 @@ import ReactFlow, {
   ReactFlowProvider,
   addEdge,
   removeElements,
-  Controls,
   Connection,
   Edge,
   Elements,
@@ -123,6 +122,16 @@ const DnDFlow = () => {
       if (!isCard) {
         xPos = xPos + 132;
       }
+      //   if (
+      //     elements.find(
+      //       (element: any) =>
+      //         element.position &&
+      //         element.position.x === xPos &&
+      //         element.position.y === yPos
+      //     )
+      //   ) {
+      //     return;
+      //   }
       const position = reactFlowInstance.project({
         x: xPos,
         y: yPos + 200,
@@ -179,7 +188,7 @@ const DnDFlow = () => {
     <div className='dndflow'>
       <ReactFlowProvider>
         <div className='reactflow-wrapper' ref={reactFlowWrapper}>
-          <Controls />
+          {/* <Controls /> */}
           <ReactFlow
             elements={elements}
             onElementClick={onElementClick}
@@ -192,8 +201,7 @@ const DnDFlow = () => {
             zoomOnScroll={false}
             zoomOnDoubleClick={false}
             paneMoveable={false}
-            // nodesDraggable={false}
-            // panOnScroll={true}
+            nodesDraggable={false}
           >
             <div className='updatenode__controls'>
               <div className='mb-3'>
