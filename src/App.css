@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .App-logo {
@@ -11,6 +12,38 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.react-flow__node-default,
+.react-flow__node-input,
+.react-flow__node-output {
+  width: auto;
+  border: none;
+}
+
+.mb-3 {
+  margin-bottom: 0 !important;
+}
+
+.react-flow__handle {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.react-flow__handle-right {
+  right: -7px !important;
+}
+
+.react-flow__handle-left {
+  left: -7px !important;
+}
+
+.react-flow__handle-top {
+  top: -7px !important;
+}
+
+.react-flow__handle-bottom {
+  bottom: -7px !important;
 }
 
 .App-header {
@@ -35,4 +68,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-control {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card {
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0.1px 0px 3px 3px rgba(0, 0, 0, 0.116);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.card span {
+  margin-left: 10px;
 }
