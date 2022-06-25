@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# WORKFLOW BUILDER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is a React project where we can create workflows as required and convert that data into JSON for portability and convenience. Also, when provided a valid JSON data, it can build the workflow using the data.
 
 ## Available Scripts
 
